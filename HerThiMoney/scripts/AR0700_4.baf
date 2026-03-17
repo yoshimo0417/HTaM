@@ -15,11 +15,12 @@ END
 IF 
 Global("ANTrollEscape","GLOBAL",1)
 Exists("ANtroll")
-OnCreation()
+Global("ANTrollEscapeAR0700","AR0700",0)
 
 THEN
   RESPONSE #100
 ActionOverride("ANtroll",DestroySelf())
+SetGlobal("ANTrollEscapeAR0700","AR0700",1)
 END
 
 IF 
